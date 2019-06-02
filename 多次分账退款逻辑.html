@@ -1,0 +1,597 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>多次分账退款逻辑</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <link href="resources/css/jquery-ui-themes.css" type="text/css" rel="stylesheet"/>
+    <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
+    <link href="data/styles.css" type="text/css" rel="stylesheet"/>
+    <link href="files/多次分账退款逻辑/styles.css" type="text/css" rel="stylesheet"/>
+    <script src="resources/scripts/jquery-1.7.1.min.js"></script>
+    <script src="resources/scripts/jquery-ui-1.8.10.custom.min.js"></script>
+    <script src="resources/scripts/prototypePre.js"></script>
+    <script src="data/document.js"></script>
+    <script src="resources/scripts/prototypePost.js"></script>
+    <script src="files/多次分账退款逻辑/data.js"></script>
+    <script type="text/javascript">
+      $axure.utils.getTransparentGifPath = function() { return 'resources/images/transparent.gif'; };
+      $axure.utils.getOtherPath = function() { return 'resources/Other.html'; };
+      $axure.utils.getReloadPath = function() { return 'resources/reload.html'; };
+    </script>
+  </head>
+  <body>
+    <div id="base" class="">
+
+      <!-- Unnamed (矩形) -->
+      <div id="u2458" class="ax_default box_1">
+        <div id="u2458_div" class=""></div>
+      </div>
+
+      <!-- Unnamed (组合 ) -->
+      <div id="u2459" class="ax_default" data-left="693" data-top="944" data-width="313" data-height="110">
+
+        <!-- Unnamed (矩形) -->
+        <div id="u2460" class="ax_default button">
+          <div id="u2460_div" class=""></div>
+        </div>
+
+        <!-- Unnamed (组合 ) -->
+        <div id="u2461" class="ax_default" data-left="711" data-top="950" data-width="276" data-height="104">
+
+          <!-- Unnamed (矩形) -->
+          <div id="u2462" class="ax_default _文本段落">
+            <div id="u2462_div" class=""></div>
+            <div id="u2462_text" class="text ">
+              <p><span>计算平台分账方退款手续费</span></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (矩形) -->
+          <div id="u2463" class="ax_default _文本段落">
+            <div id="u2463_div" class=""></div>
+            <div id="u2463_text" class="text ">
+              <p><span>计算分账方退款手续费</span></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (矩形) -->
+          <div id="u2464" class="ax_default label">
+            <div id="u2464_div" class=""></div>
+            <div id="u2464_text" class="text ">
+              <p><span>退款手续费=0</span></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (矩形) -->
+          <div id="u2465" class="ax_default label">
+            <div id="u2465_div" class=""></div>
+            <div id="u2465_text" class="text ">
+              <p><span>退款手续费=退款金额/订单金额*订单手续费</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u2466" class="ax_default box_1">
+        <div id="u2466_div" class=""></div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u2467" class="ax_default button">
+        <div id="u2467_div" class=""></div>
+        <div id="u2467_text" class="text ">
+          <p><span>开始</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u2468" class="ax_default button">
+        <div id="u2468_div" class=""></div>
+        <div id="u2468_text" class="text ">
+          <p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">计算该订单分账方</span><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial';font-weight:700;">应扣金额</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u2469" class="ax_default _连接线">
+        <img id="u2469_seg0" class="img " src="images/多次分账退款逻辑/u2469_seg0.png" alt="u2469_seg0"/>
+        <img id="u2469_seg1" class="img " src="images/多次分账退款逻辑/u2469_seg1.png" alt="u2469_seg1"/>
+        <div id="u2469_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u2470" class="ax_default button">
+        <div id="u2470_div" class=""></div>
+        <div id="u2470_text" class="text ">
+          <p><span>冻结主账户资金</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u2471" class="ax_default button">
+        <div id="u2471_div" class=""></div>
+        <div id="u2471_text" class="text ">
+          <p><span>冻结主账户资金</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u2472" class="ax_default _连接线">
+        <img id="u2472_seg0" class="img " src="images/多次分账退款逻辑/u2472_seg0.png" alt="u2472_seg0"/>
+        <img id="u2472_seg1" class="img " src="images/多次分账退款逻辑/u2472_seg1.png" alt="u2472_seg1"/>
+        <img id="u2472_seg2" class="img " src="images/多次分账退款逻辑/u2469_seg1.png" alt="u2472_seg2"/>
+        <div id="u2472_text" class="text ">
+          <p><span>平台分账方</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (菱形) -->
+      <div id="u2473" class="ax_default flow_shape">
+        <img id="u2473_img" class="img " src="images/多次分账退款逻辑/u2473.png"/>
+        <div id="u2473_text" class="text ">
+          <p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">应扣金额&gt;(</span><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial';font-weight:700;">可用金额-冻结金额</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">)</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u2474" class="ax_default _连接线">
+        <img id="u2474_seg0" class="img " src="images/多次分账退款逻辑/u2474_seg0.png" alt="u2474_seg0"/>
+        <img id="u2474_seg1" class="img " src="images/多次分账退款逻辑/u2469_seg1.png" alt="u2474_seg1"/>
+        <div id="u2474_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u2475" class="ax_default button">
+        <div id="u2475_div" class=""></div>
+        <div id="u2475_text" class="text ">
+          <p><span>报错，提示可用金额不足</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u2476" class="ax_default _连接线">
+        <img id="u2476_seg0" class="img " src="images/多次分账退款逻辑/u2476_seg0.png" alt="u2476_seg0"/>
+        <img id="u2476_seg1" class="img " src="images/多次分账退款逻辑/u2476_seg1.png" alt="u2476_seg1"/>
+        <img id="u2476_seg2" class="img " src="images/多次分账退款逻辑/u2469_seg1.png" alt="u2476_seg2"/>
+        <div id="u2476_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u2477" class="ax_default button">
+        <div id="u2477_div" class=""></div>
+        <div id="u2477_text" class="text ">
+          <p><span>主资金户冻结成功</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u2478" class="ax_default _连接线">
+        <img id="u2478_seg0" class="img " src="images/多次分账退款逻辑/u2478_seg0.png" alt="u2478_seg0"/>
+        <img id="u2478_seg1" class="img " src="images/多次分账退款逻辑/u2469_seg1.png" alt="u2478_seg1"/>
+        <div id="u2478_text" class="text ">
+          <p><span>否</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u2479" class="ax_default button">
+        <div id="u2479_div" class=""></div>
+        <div id="u2479_text" class="text ">
+          <p><span>主资金户冻结成功</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u2480" class="ax_default _连接线">
+        <img id="u2480_seg0" class="img " src="images/多次分账退款逻辑/u2469_seg0.png" alt="u2480_seg0"/>
+        <img id="u2480_seg1" class="img " src="images/多次分账退款逻辑/u2469_seg1.png" alt="u2480_seg1"/>
+        <div id="u2480_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u2481" class="ax_default _连接线">
+        <img id="u2481_seg0" class="img " src="images/多次分账退款逻辑/u2481_seg0.png" alt="u2481_seg0"/>
+        <img id="u2481_seg1" class="img " src="images/多次分账退款逻辑/u2481_seg1.png" alt="u2481_seg1"/>
+        <img id="u2481_seg2" class="img " src="images/多次分账退款逻辑/u2481_seg2.png" alt="u2481_seg2"/>
+        <div id="u2481_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u2482" class="ax_default button">
+        <div id="u2482_div" class=""></div>
+        <div id="u2482_text" class="text ">
+          <p><span>退款资金冻结判断</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u2483" class="ax_default _连接线">
+        <img id="u2483_seg0" class="img " src="images/多次分账退款逻辑/u2469_seg0.png" alt="u2483_seg0"/>
+        <img id="u2483_seg1" class="img " src="images/多次分账退款逻辑/u2469_seg1.png" alt="u2483_seg1"/>
+        <div id="u2483_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u2484" class="ax_default button">
+        <div id="u2484_div" class=""></div>
+        <div id="u2484_text" class="text ">
+          <p><span>输入订单号、分账订单号、分账ID、退款金额、分账方金额、退款订单号、分账退款订单</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (菱形) -->
+      <div id="u2485" class="ax_default flow_shape">
+        <img id="u2485_img" class="img " src="images/多次分账退款逻辑/u2485.png"/>
+        <div id="u2485_text" class="text ">
+          <p><span>判断此次退款金额&lt;=指定的订单分账金额</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u2486" class="ax_default button">
+        <div id="u2486_div" class=""></div>
+        <div id="u2486_text" class="text ">
+          <p><span>提示：此次退款金额已超过指定的订单分账金额</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u2487" class="ax_default _连接线">
+        <img id="u2487_seg0" class="img " src="images/多次分账退款逻辑/u2487_seg0.png" alt="u2487_seg0"/>
+        <img id="u2487_seg1" class="img " src="images/多次分账逻辑/u2390_seg1.png" alt="u2487_seg1"/>
+        <div id="u2487_text" class="text ">
+          <p><span>N</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u2488" class="ax_default _连接线">
+        <img id="u2488_seg0" class="img " src="images/多次分账退款逻辑/u2488_seg0.png" alt="u2488_seg0"/>
+        <img id="u2488_seg1" class="img " src="images/多次分账逻辑/u2382_seg1.png" alt="u2488_seg1"/>
+        <div id="u2488_text" class="text ">
+          <p><span>Y</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (菱形) -->
+      <div id="u2489" class="ax_default flow_shape">
+        <img id="u2489_img" class="img " src="images/多次分账退款逻辑/u2489.png"/>
+        <div id="u2489_text" class="text ">
+          <p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">各分账方的退款金额均</span><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial';font-weight:700;">小于等于</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">指定批次的订单分账金额；</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u2490" class="ax_default button">
+        <div id="u2490_div" class=""></div>
+        <div id="u2490_text" class="text ">
+          <p><span>提示：此次退款金额已超过指定的订单分账金额</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u2491" class="ax_default _连接线">
+        <img id="u2491_seg0" class="img " src="images/多次分账退款逻辑/u2491_seg0.png" alt="u2491_seg0"/>
+        <img id="u2491_seg1" class="img " src="images/多次分账退款逻辑/u2491_seg1.png" alt="u2491_seg1"/>
+        <img id="u2491_seg2" class="img " src="images/多次分账退款逻辑/u2491_seg2.png" alt="u2491_seg2"/>
+        <img id="u2491_seg3" class="img " src="images/多次分账退款逻辑/u2491_seg3.png" alt="u2491_seg3"/>
+        <div id="u2491_text" class="text ">
+          <p><span>N</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u2492" class="ax_default button">
+        <div id="u2492_div" class=""></div>
+        <div id="u2492_text" class="text ">
+          <p><span>允许退款</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u2493" class="ax_default _连接线">
+        <img id="u2493_seg0" class="img " src="images/多次分账逻辑/u2394_seg0.png" alt="u2493_seg0"/>
+        <img id="u2493_seg1" class="img " src="images/多次分账逻辑/u2382_seg1.png" alt="u2493_seg1"/>
+        <div id="u2493_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (菱形) -->
+      <div id="u2494" class="ax_default flow_shape">
+        <img id="u2494_img" class="img " src="images/多次分账退款逻辑/u2489.png"/>
+        <div id="u2494_text" class="text ">
+          <p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">判断平台分账方退款</span><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial';font-weight:700;">是否退回</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">手续费</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u2495" class="ax_default button">
+        <div id="u2495_div" class=""></div>
+        <div id="u2495_text" class="text ">
+          <p><span>退款手续费=0</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u2496" class="ax_default _连接线">
+        <img id="u2496_seg0" class="img " src="images/多次分账退款逻辑/u2496_seg0.png" alt="u2496_seg0"/>
+        <img id="u2496_seg1" class="img " src="images/多次分账逻辑/u2382_seg1.png" alt="u2496_seg1"/>
+        <div id="u2496_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u2497" class="ax_default _连接线">
+        <img id="u2497_seg0" class="img " src="images/多次分账退款逻辑/u2497_seg0.png" alt="u2497_seg0"/>
+        <img id="u2497_seg1" class="img " src="images/多次分账退款逻辑/u2497_seg1.png" alt="u2497_seg1"/>
+        <img id="u2497_seg2" class="img " src="images/多次分账逻辑/u2382_seg1.png" alt="u2497_seg2"/>
+        <div id="u2497_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u2498" class="ax_default _连接线">
+        <img id="u2498_seg0" class="img " src="images/多次分账逻辑/u2413_seg0.png" alt="u2498_seg0"/>
+        <img id="u2498_seg1" class="img " src="images/多次分账逻辑/u2382_seg1.png" alt="u2498_seg1"/>
+        <div id="u2498_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u2499" class="ax_default button">
+        <div id="u2499_div" class=""></div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u2500" class="ax_default label">
+        <div id="u2500_div" class=""></div>
+        <div id="u2500_text" class="text ">
+          <p><span>应扣金额=应退金额-退回手续费；</span></p><p><span><br></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u2501" class="ax_default _文本段落">
+        <div id="u2501_div" class=""></div>
+        <div id="u2501_text" class="text ">
+          <p><span>计算分账方/平台应扣金额</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u2502" class="ax_default _连接线">
+        <img id="u2502_seg0" class="img " src="images/多次分账退款逻辑/u2502_seg0.png" alt="u2502_seg0"/>
+        <img id="u2502_seg1" class="img " src="images/多次分账逻辑/u2382_seg1.png" alt="u2502_seg1"/>
+        <div id="u2502_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u2503" class="ax_default _连接线">
+        <img id="u2503_seg0" class="img " src="images/多次分账退款逻辑/u2503_seg0.png" alt="u2503_seg0"/>
+        <img id="u2503_seg1" class="img " src="images/多次分账退款逻辑/u2503_seg1.png" alt="u2503_seg1"/>
+        <img id="u2503_seg2" class="img " src="images/多次分账逻辑/u2390_seg1.png" alt="u2503_seg2"/>
+        <div id="u2503_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u2504" class="ax_default button">
+        <div id="u2504_div" class=""></div>
+        <div id="u2504_text" class="text ">
+          <p><span>进入“退款资金冻结判断”</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u2505" class="ax_default _连接线">
+        <img id="u2505_seg0" class="img " src="images/多次分账退款逻辑/u2505_seg0.png" alt="u2505_seg0"/>
+        <img id="u2505_seg1" class="img " src="images/多次分账逻辑/u2382_seg1.png" alt="u2505_seg1"/>
+        <div id="u2505_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u2506" class="ax_default button">
+        <div id="u2506_div" class=""></div>
+        <div id="u2506_text" class="text ">
+          <p><span>退款发起成功，同时冻结各分账方金额</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u2507" class="ax_default _连接线">
+        <img id="u2507_seg0" class="img " src="images/多次分账退款逻辑/u2507_seg0.png" alt="u2507_seg0"/>
+        <img id="u2507_seg1" class="img " src="images/多次分账逻辑/u2382_seg1.png" alt="u2507_seg1"/>
+        <div id="u2507_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (菱形) -->
+      <div id="u2508" class="ax_default flow_shape">
+        <img id="u2508_img" class="img " src="images/多次分账退款逻辑/u2473.png"/>
+        <div id="u2508_text" class="text ">
+          <p><span>判断退款是否最终成功</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u2509" class="ax_default _连接线">
+        <img id="u2509_seg0" class="img " src="images/多次分账逻辑/u2413_seg0.png" alt="u2509_seg0"/>
+        <img id="u2509_seg1" class="img " src="images/多次分账逻辑/u2382_seg1.png" alt="u2509_seg1"/>
+        <div id="u2509_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u2510" class="ax_default button">
+        <div id="u2510_div" class=""></div>
+        <div id="u2510_text" class="text ">
+          <p><span>退款成功，直接扣除冻结金额</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u2511" class="ax_default _连接线">
+        <img id="u2511_seg0" class="img " src="images/多次分账退款逻辑/u2511_seg0.png" alt="u2511_seg0"/>
+        <img id="u2511_seg1" class="img " src="images/多次分账逻辑/u2382_seg1.png" alt="u2511_seg1"/>
+        <div id="u2511_text" class="text ">
+          <p><span>Y</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u2512" class="ax_default button">
+        <div id="u2512_div" class=""></div>
+        <div id="u2512_text" class="text ">
+          <p><span>退款失败，已冻结的相关资金解冻</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u2513" class="ax_default _连接线">
+        <img id="u2513_seg0" class="img " src="images/多次分账退款逻辑/u2513_seg0.png" alt="u2513_seg0"/>
+        <img id="u2513_seg1" class="img " src="images/多次分账逻辑/u2397_seg2.png" alt="u2513_seg1"/>
+        <div id="u2513_text" class="text ">
+          <p><span>N</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u2514" class="ax_default button">
+        <div id="u2514_div" class=""></div>
+        <div id="u2514_text" class="text ">
+          <p><span>更新状态</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u2515" class="ax_default _连接线">
+        <img id="u2515_seg0" class="img " src="images/多次分账逻辑/u2413_seg0.png" alt="u2515_seg0"/>
+        <img id="u2515_seg1" class="img " src="images/多次分账逻辑/u2382_seg1.png" alt="u2515_seg1"/>
+        <div id="u2515_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u2516" class="ax_default _连接线">
+        <img id="u2516_seg0" class="img " src="images/多次分账退款逻辑/u2516_seg0.png" alt="u2516_seg0"/>
+        <img id="u2516_seg1" class="img " src="images/多次分账退款逻辑/u2516_seg1.png" alt="u2516_seg1"/>
+        <img id="u2516_seg2" class="img " src="images/多次分账逻辑/u2390_seg1.png" alt="u2516_seg2"/>
+        <div id="u2516_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u2517" class="ax_default button">
+        <div id="u2517_div" class=""></div>
+        <div id="u2517_text" class="text ">
+          <p><span>结束</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u2518" class="ax_default _连接线">
+        <img id="u2518_seg0" class="img " src="images/多次分账退款逻辑/u2518_seg0.png" alt="u2518_seg0"/>
+        <img id="u2518_seg1" class="img " src="images/多次分账逻辑/u2382_seg1.png" alt="u2518_seg1"/>
+        <div id="u2518_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u2519" class="ax_default button">
+        <div id="u2519_div" class=""></div>
+        <div id="u2519_text" class="text ">
+          <p><span>开 始</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u2520" class="ax_default _连接线">
+        <img id="u2520_seg0" class="img " src="images/多次分账退款逻辑/u2520_seg0.png" alt="u2520_seg0"/>
+        <img id="u2520_seg1" class="img " src="images/多次分账逻辑/u2382_seg1.png" alt="u2520_seg1"/>
+        <div id="u2520_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u2521" class="ax_default button">
+        <div id="u2521_div" class=""></div>
+        <div id="u2521_text" class="text ">
+          <p><span>格式校验</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u2522" class="ax_default _连接线">
+        <img id="u2522_seg0" class="img " src="images/多次分账逻辑/u2394_seg0.png" alt="u2522_seg0"/>
+        <img id="u2522_seg1" class="img " src="images/多次分账逻辑/u2382_seg1.png" alt="u2522_seg1"/>
+        <div id="u2522_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u2523" class="ax_default _连接线">
+        <img id="u2523_seg0" class="img " src="images/多次分账退款逻辑/u2523_seg0.png" alt="u2523_seg0"/>
+        <img id="u2523_seg1" class="img " src="images/多次分账逻辑/u2382_seg1.png" alt="u2523_seg1"/>
+        <div id="u2523_text" class="text ">
+          <p><span>校验通过</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u2524" class="ax_default button">
+        <div id="u2524_div" class=""></div>
+        <div id="u2524_text" class="text ">
+          <p><span>提示：信息格式校验失败</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u2525" class="ax_default _连接线">
+        <img id="u2525_seg0" class="img " src="images/多次分账退款逻辑/u2525_seg0.png" alt="u2525_seg0"/>
+        <img id="u2525_seg1" class="img " src="images/多次分账逻辑/u2390_seg1.png" alt="u2525_seg1"/>
+        <div id="u2525_text" class="text ">
+          <p><span>校验失败</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u2526" class="ax_default button">
+        <div id="u2526_div" class=""></div>
+        <div id="u2526_text" class="text ">
+          <p><span>分账退款逻辑</span></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
